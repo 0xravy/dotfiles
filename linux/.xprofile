@@ -1,0 +1,5 @@
+nitrogen --restore &
+$HOME/.shells/screenlayout.sh &
+$HOME/.shells/keyboard.sh &
+
+screenkey &

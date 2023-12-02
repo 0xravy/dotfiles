@@ -1,0 +1,16 @@
+{
+    "workbench.colorTheme": "Gruvbox Dark Medium",
+    "workbench.iconTheme": "vscode-icons",
+    "editor.tokenColorCustomizations": {},
+    "editor.fontFamily": "Fira Code",
+    "editor.fontLigatures": true,
+    "terminal.integrated.fontFamily": "'JetBrainsMono Nerd Font'",
+    "glassit.alpha": 255,
+    "window.menuBarVisibility": "toggle",
+    "editor.mouseWheelZoom": true,
+    "svelte.enable-ts-plugin": true,
+    "files.autoSave": "afterDelay",
+    "typescript.updateImportsOnFileMove.enabled": "always",
+    "editor.indentSize": "tabSize",
+    "git.openRepositoryInParentFolders": "always"
+}
