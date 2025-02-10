@@ -5,7 +5,7 @@
   # hardware.pulseaudio.support32Bit = true;
   # hardware.pulseaudio.extraConfig = "load-module module-combine-sink";
 
-  hardware.pulseaudio.enable = false;
+  services.pulseaudio.enable = false;
   services.pipewire = {
     enable = true;
     alsa.enable = true;

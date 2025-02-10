@@ -6,10 +6,54 @@
   environment.systemPackages = [
     pkgs.home-manager
 
-    # => BROWSERS
-    pkgs.firefox
+    # ===> NETWORKING
+    pkgs.networkmanagerapplet
 
-    # => APPS
+    # ===> TOOLS
+    pkgs.fastfetch
+    pkgs.nerdfetch
+    pkgs.lazygit
+    pkgs.bat
+    pkgs.themechanger
+    pkgs.pistol
+    pkgs.ctpv
+    pkgs.cava
+    pkgs.gromit-mpx
+    pkgs.vlc
+    pkgs.fzf
+    pkgs.fd
+    pkgs.picom
+    pkgs.rofi
+    pkgs.wofi
+    pkgs.pkg-config
+    pkgs.feh
+    pkgs.xorg.xinit
+    pkgs.xorg.xrandr
+    pkgs.arandr
+    pkgs.wdisplays
+    pkgs.scrcpy
+    pkgs.warpd
+    pkgs.dunst
+    pkgs.playerctl
+    pkgs.brightnessctl
+    pkgs.light
+    pkgs.xwinwrap
+    pkgs.ffmpeg
+    pkgs.tty-clock
+    pkgs.sqlite
+    pkgs.cmatrix
+    pkgs.hollywood
+    pkgs.stow
+    pkgs.lazysql
+    pkgs.zoxide
+    pkgs.jq
+
+    # ==> APPS
+    pkgs.superTuxKart
+    pkgs.firefox
+    pkgs.telegram-desktop
+    pkgs.polybar
+    pkgs.wl-clipboard
     pkgs.util-linux
     pkgs.neovim
     pkgs.lf
@@ -36,62 +80,79 @@
     pkgs.light
     pkgs.gns3-server
     pkgs.postman
+    pkgs.pavucontrol
+    pkgs.obs-studio
+    pkgs.obsidian
+    # pkgs.discord
+    pkgs.brave
+    pkgs.google-chrome
+    pkgs.gimp
+    pkgs.gparted
+    pkgs.zed-editor
+    pkgs.vscode
+    pkgs.gnome-calculator
+    pkgs.waypaper
+    pkgs.wireshark
+    pkgs.mission-center
+    # pkgs.ciscoPacketTracer8
+    pkgs.zathura
+    pkgs.pcmanfm
+    pkgs.lxqt.lxqt-policykit
+    pkgs.libreoffice-qt-fresh
+    pkgs.anki-bin
+    pkgs.gnome-clocks
+    pkgs.screenkey
+    pkgs.lxappearance
+    pkgs.sqlitebrowser
+    pkgs.cool-retro-term
+    pkgs.appimage-run
+    pkgs.gns3-gui
+    pkgs.prismlauncher
 
-    # NOTE: PROGRAMMING LNAGUAGES
+    # ===> PROGRAMMING LNAGUAGES
 
-    # {?} => NIX
-
+    # => NIX
     pkgs.nixd # NIX lsp
     pkgs.alejandra # NIX formatter
 
-    # {?} => C/C++
-
+    # => C/C++
     pkgs.gcc # C compiler
     pkgs.clang # C++ compiler
 
-    # {?} => deno
-
+    # => deno
     pkgs.deno # JS compiler
 
-    # {?} => bun
-
+    # => bun
     pkgs.bun # JS compiler
 
-    # {?} => nodejs
-
+    # => nodejs
     pkgs.nodejs_22 # NodeJS compiler
     pkgs.nodePackages.live-server # liveserver package
-
     pkgs.svelte-language-server
 
-    # {?} => python
-
+    # => python
     pkgs.python3 # PY compiler
     pkgs.python311Packages.pip # PY package manager
 
-    # {?} => rust
-
+    # => rust
     pkgs.rustup # RUST tolls
     pkgs.rust-analyzer # RUST LSP
 
-    # {?} => java
-
+    # => java
     # pkgs.openjdk22
     # jdk8_headless
     # jre8
     # pkgs.javaPackages.openjfx22
     # pkgs.jdt-language-server
 
-    # {?} => go
-
+    # => go
     pkgs.libcap
     pkgs.go # GO compiler
     pkgs.gofumpt # GO formatter
     pkgs.goimports-reviser # GO formatter
     pkgs.golines # GO formatter
 
-    # {?} => lua
-
+    # => lua
     pkgs.lua # LUA compiler
     pkgs.lua-language-server # LUA lsp
     pkgs.luajitPackages.luarocks # LUA package manager

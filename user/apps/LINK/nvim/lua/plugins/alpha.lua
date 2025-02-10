@@ -1,6 +1,5 @@
 -- this plugin for dashboard
 
-
 return {
 	"goolord/alpha-nvim",
 	dependencies = {

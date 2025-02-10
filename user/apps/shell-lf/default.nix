@@ -76,6 +76,13 @@
 			}}
 
 			map w :setwallpaper 
+
+
+			cmd setlivewallpaper ''\${{
+				${mySettings.user.dotfilesDir}/user/scripts/bgv.sh -a $f
+			}}
+
+			map W :setlivewallpaper 
 		'';
 	};
 

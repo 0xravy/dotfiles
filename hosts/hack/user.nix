@@ -3,7 +3,7 @@
     # cyper tools
     openvpn
     nmap
-    john
+    # john
     inetutils
   ];
 }

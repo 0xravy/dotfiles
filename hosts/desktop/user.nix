@@ -1,6 +1,5 @@
 {
   config,
-  pkgs,
   mySettings,
   ...
 }: let
@@ -18,84 +17,6 @@ in {
     "${userDir}/style/gtk.nix"
 
     ../hack/user.nix
-  ];
-
-  home.packages = with pkgs; [
-    # ============> TOOLS
-    fastfetch
-    nerdfetch
-    lazygit
-    bat
-    themechanger
-    pistol
-    ctpv
-    cava
-    gromit-mpx
-    vlc
-    fzf
-    fd
-    picom
-    flameshot
-    rofi
-    pkg-config
-    feh
-    xorg.xinit
-    xorg.xrandr
-    arandr
-    scrcpy
-    warpd
-    dunst
-    playerctl
-    brightnessctl
-    light
-    xwinwrap
-    ffmpeg
-    tty-clock
-    sqlite
-    cmatrix
-    hollywood
-    stow
-    lazysql
-    zoxide
-    jq
-
-    # ============> APPS
-    pavucontrol
-    obs-studio
-    obsidian
-    discord
-    brave
-    google-chrome
-    gimp
-    gparted
-    zed-editor
-    vscode
-    gnome-calculator
-    waypaper
-    wireshark
-    mission-center
-    ciscoPacketTracer8
-    zathura
-    pcmanfm
-    lxqt.lxqt-policykit
-    libreoffice-qt-fresh
-    anki-bin
-    gnome-clocks
-    screenkey
-    lxappearance
-    sqlitebrowser
-    cool-retro-term
-    appimage-run
-    gns3-gui
-
-    # bar
-    polybar
-
-    # games
-    superTuxKart
-
-    # ============> NETWORKING
-    networkmanagerapplet
   ];
 
   services.syncthing.enable = true;
