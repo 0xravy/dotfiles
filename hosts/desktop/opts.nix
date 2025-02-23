@@ -30,7 +30,7 @@
       if (wm == "hyprland")
       then "wayland"
       else "x11";
-    browser = "brave"; # Default browser; must select one from ./user/app/browser/
+    browser = "brave-browser"; # Default browser; must select one from ./user/app/browser/
     term = "kitty"; # Default terminal command;
     # font = "Monaspace Krypton, Fira Code, Monaco, monospace"; # Selected font
     # fontPkg = pkgs.monaspace; # Font package

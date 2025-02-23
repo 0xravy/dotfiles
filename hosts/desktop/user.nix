@@ -50,11 +50,11 @@ in {
     enable = true;
 
     defaultApplications = {
-      "text/html" = "org.${mySettings.user.browser}.${mySettings.user.browser}.desktop";
-      "x-scheme-handler/http" = "org.${mySettings.user.browser}.${mySettings.user.browser}.desktop";
-      "x-scheme-handler/https" = "org.${mySettings.user.browser}.${mySettings.user.browser}.desktop";
-      "x-scheme-handler/about" = "org.${mySettings.user.browser}.${mySettings.user.browser}.desktop";
-      "x-scheme-handler/unknown" = "org.${mySettings.user.browser}.${mySettings.user.browser}.desktop";
+      "text/html" = "${mySettings.user.browser}.desktop";
+      "x-scheme-handler/http" = "${mySettings.user.browser}.desktop";
+      "x-scheme-handler/https" = "${mySettings.user.browser}.desktop";
+      "x-scheme-handler/about" = "${mySettings.user.browser}.desktop";
+      "x-scheme-handler/unknown" = "${mySettings.user.browser}.desktop";
     };
   };
 

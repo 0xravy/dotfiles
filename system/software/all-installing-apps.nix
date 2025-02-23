@@ -83,7 +83,7 @@
     pkgs.pavucontrol
     pkgs.obs-studio
     pkgs.obsidian
-    # pkgs.discord
+    pkgs-stable.discord
     pkgs.brave
     pkgs.google-chrome
     pkgs.gimp
@@ -156,5 +156,12 @@
     pkgs.lua # LUA compiler
     pkgs.lua-language-server # LUA lsp
     pkgs.luajitPackages.luarocks # LUA package manager
+
+    # => dart
+    pkgs.dart
+    pkgs.flutter
+    pkgs.jdk
+    pkgs.android-tools
+    pkgs.android-studio
   ];
 }

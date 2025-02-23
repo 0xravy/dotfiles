@@ -22,10 +22,16 @@ in {
 
     # software
     "${systemDir}/software/all-installing-apps.nix"
+    "${systemDir}/software/app-thunar.nix"
     "${systemDir}/software/app-vm.nix"
-    "${systemDir}/software/desktop-bspwm.nix"
-    "${systemDir}/software/desktop-i3wm.nix"
+
+    # "${systemDir}/software/wayland.nix"
+    # "${systemDir}/software/xorg.nix"
+
+    # "${systemDir}/software/desktop-bspwm.nix"
+    # "${systemDir}/software/desktop-i3wm."
     "${systemDir}/software/desktop-hyprland.nix"
+
     "${systemDir}/software/login-ly.nix"
     # "${systemDir}/software/login-gdm.nix"
     # "${systemDir}/software/login-sddm.nix"
@@ -53,23 +59,6 @@ in {
 
     initrd.availableKernelModules = ["xhci_pci" "ahci" "nvme" "usb_storage" "usbhid" "sd_mod"];
     initrd.kernelModules = [];
-  };
-
-  xdg = {
-    portal = {
-      enable = true;
-      extraPortals = with pkgs; [
-        xdg-desktop-portal
-        # xdg-desktop-portal-gtk
-      ];
-      config.common.default = "*";
-    };
-  };
-
-  services.xserver = {
-    enable = true;
-    xkb.layout = "us,ara";
-    xkb.options = "grp:rctrl_rshift_toggle,caps:escape";
   };
 
   services.flatpak.enable = true;
